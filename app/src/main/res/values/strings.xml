@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FacialExpression</string>
+    <string name="skip">Skip</string>
+    <string name="appName">Facial Expression Detection</string>
+    <string name="welcomeText">Welcome to Login Screen</string>
+    <string name="regisration_title">Add User Details</string>
+
+    <string name="first_slide_title1">Face</string>
+    <string name="first_slide_title2">Detection</string>
+    <string name="second_slide_title1">Expression</string>
+    <string name="second_slide_title2">Recognition</string>
+    <string name="third_slide_title1">Object</string>
+    <string name="third_slide_title2">Detection</string>
+
+    <string name="first_slide_disc">Captures the images from camera and gallery and detects the faces.</string>
+    <string name="second_slide_disc">Find the emotion on the face like happy, anger, surprise, sad etc.</string>
+    <string name="third_slide_disc">Detects object from cameras.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pick_image_button">Pick an image</string>
+    <string name="take_photo_button">Take a photo</string>
+    <string name="classification_delimiter_text_view">-</string>
+    <string name="face">Face</string>
+    <string name="faceless">No face detected</string>
+
+    <string name="dialog_msg_to_load_image">Storage permission must be granted in order to load image files from the storage device</string>
+    <string name="dialog_msg_to_save_text_file">Storage permission must be granted in order to save the text file in the storage device</string>
+    <string name="enter_file_name_to_save">Enter file name to save</string>
+    <string name="save">save</string>
+    <string name="subTitle">Expression is the mystery of beauty</string>
+    <string name="no_image_selected">No Image Selected</string>
+    <string name="edit_content">Edit Content</string>
+    <string name="result_will_be_displayed_here">Result will be displayed here</string>
+    <string name="modifier">Modifier</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>

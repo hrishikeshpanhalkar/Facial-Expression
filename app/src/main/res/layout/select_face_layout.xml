@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Face"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/tv"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:background="@drawable/round_button"
+            android:id="@+id/ok"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+
+        <Button
+            android:background="@drawable/round_button"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/ok"
+            android:id="@+id/cancel"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </RelativeLayout>
+
+</RelativeLayout>

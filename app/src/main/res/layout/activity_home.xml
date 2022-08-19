@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:transitionName="login_home"
+    tools:context=".activities.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/home_back"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_arrow_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/account"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_account"
+            android:transitionName="transition_profile_picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="40dp"
+                android:backgroundTint="#FFA500"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/adduser_layout"
+                    android:transitionName="Addfragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:text="Add User"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="60dp"
+                        android:src="@drawable/adduser" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click Here"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:drawableEndCompat="@drawable/ic_arrow" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="40dp"
+                android:backgroundTint="#0000FF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/updateuser_layout"
+                    android:transitionName="Updatefragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update User"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="60dp"
+                        android:src="@drawable/updateuser" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click Here"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:drawableEndCompat="@drawable/ic_arrow"
+                        app:drawableTint="@color/white" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="40dp"
+                android:backgroundTint="#FFD700"
+                android:transitionName="login_home"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/deleteuser_layout"
+                    android:transitionName="Deletefragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete User"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="60dp"
+                        android:src="@drawable/deleteuser" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click Here"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/alegreya_sc_black"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:drawableEndCompat="@drawable/ic_arrow"
+                        app:drawableTint="@color/black" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

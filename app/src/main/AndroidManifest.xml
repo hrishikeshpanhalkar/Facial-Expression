@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.facialexpression">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FacialExpression">
+        <activity
+            android:name=".activities.ModifierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.User_Update_1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.User_Delete_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.User_Update_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPassword5_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPassword4_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPassword3_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPassword2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPassword1_activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OnboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
+    </application>
+
+</manifest>

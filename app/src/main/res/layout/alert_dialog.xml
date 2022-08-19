@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/round_background"
+    android:backgroundTint="#009688">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_internet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ooops !"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No internet connection found. \n Check your Connection"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_marginTop="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_try_again"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/bottom_bar"/>
+
+
+</LinearLayout>

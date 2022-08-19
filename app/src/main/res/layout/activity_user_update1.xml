@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="login_User"
+    tools:context=".activities.User_Update_1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/profile_bk"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/BackUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/ic_arrow_back"
+                android:transitionName="login_User" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_update"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account"
+                />
+
+            <TextView
+                android:id="@+id/User_fullName_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/profile_image_update"
+                android:fontFamily="@font/bungee"
+                android:includeFontPadding="false"
+                android:text="Hrishikesh Panhalkar"
+                android:textSize="15sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addimage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/profilepic_round" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-80dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/profile_bk">
+
+                    <ImageButton
+                        android:id="@+id/bdatebtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_date_range" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_birthdate_label_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:editable="false"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="01/09/1997"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/user_birthdate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_birthdate_label_update"
+                        android:layout_centerHorizontal="true"
+                        android:text="BirthDate"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/profile_bk">
+
+                    <ImageButton
+                        android:id="@+id/showDialog"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_gender" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_gender_label_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:inputType="text"
+                        android:editable="false"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="Male"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/user_gender_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_gender_label_update"
+                        android:layout_centerHorizontal="true"
+                        android:text="Gender"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_email_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                app:hintTextColor="#000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email_"
+                    android:drawablePadding="10dp"
+                    android:editable="false"
+                    android:text="abc@gmail.com"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullname_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Full Name"
+                app:hintTextColor="#000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:text="Hrishikesh Panhalkar"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_phone_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone"
+                app:hintTextColor="#000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:drawableStart="@drawable/ic_call"
+                    android:drawablePadding="10dp"
+                    android:text="+91-1234567890"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/teacher_update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Update"
+                android:layout_margin="10dp"
+                android:background="@drawable/profile_bk"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
